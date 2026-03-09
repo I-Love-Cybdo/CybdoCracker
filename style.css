@@ -1,3 +1,9 @@
+:root{
+    --black: #000000;
+    --niceword: #ba6fb0;
+    --green: #12f456;
+
+}
 body{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -15,4 +21,5 @@ div{
     border: solid 5px rgb(140, 190, 214);
     margin:67px;
     height: 16px;
+    padding: 41px;
 }
