@@ -1,3 +1,9 @@
+.flex-box{
+    background: var(--black);
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+}
 :root{
     --black: #000000;
     --niceword: #ba6fb0;
@@ -17,19 +23,14 @@ header{
     background-color:#FF007F;
     margin :30px;
 }
-div{
-    border: solid 5px rgb(140, 190, 214);
-    margin:10px;
-    height: 15px;
-    padding: 40px;
-}
 .grid{
     display: grid;
     grid-template-areas:
     "a b c";  
     gap: 10px;
     margin: 50px;
-    background-color: var(--green)
+    background-color: var(--green);
+    padding: 50px
 
 }
 .first{
@@ -46,7 +47,8 @@ div{
 .third{
     grid-area:c;
     background-color: #b3a452;
-    color:crimson
+    color:crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .box{
     padding: 10px;
@@ -60,24 +62,27 @@ div{
 }
 @keyframes wobble{
     0%{transform:rotate(-360deg);}
-    100%{transoform:rotate(360deg);}
+    100%{transform:rotate(360deg);}
 }
 .animated2{
-    animation: wobble2 0.5s ease-in-out infinite alternate
+        animation: wobble2 0.5s ease-in-out infinite alternate
+        }
+        @keyframes wobble2 {
+            0%{transform:rotate(360deg);}
+                100%{transform:rotate(86400deg);} /*i like men*/
+                    
 }
-@keyframes wobble2 {
-    0%{transform:rotate(360deg);}
-    100%{transform:rotate(86400deg);} /*i like men*/
-    
+@media(max-width:670.67px){
+    .flex-container{
+        flex-direction: column;
+
+    }
 }
-.flexcontainer{
+.flex-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:  center;
     flex-direction:  row;
-}
-.item{
-    background: var(--black);
-    padding: 1px;
-    color: white;
+    margin: 3px;
+    gap: 20px;
 }
