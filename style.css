@@ -23,3 +23,19 @@ div{
     height: 16px;
     padding: 41px;
 }
+.grid{
+    display: grid;
+    grid-template-areas:
+    "a c"
+    "b c";  
+    gap: 10px;
+    margin: 12px;
+    background-color: var(--green)
+
+}
+.first{
+    grid-area:a;
+    background-color: coral;
+    color:aquamarine
+    
+}
