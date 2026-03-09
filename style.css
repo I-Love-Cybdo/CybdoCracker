@@ -7,3 +7,12 @@ body{
 img {
     width: 200px;
 }
+header{
+    background-color:#FF007F;
+    margin :30px;
+}
+div{
+    border: solid 5px rgb(140, 190, 214);
+    margin:67px;
+    height: 16px;
+}
