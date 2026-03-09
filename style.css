@@ -8,7 +8,7 @@ body{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color:cornflowerblue;
-    background-color:bisque;
+    background-image: linear-gradient(135deg, blue, orange, purple, white, black);
 }
 img {
     width: 200px;
@@ -19,17 +19,16 @@ header{
 }
 div{
     border: solid 5px rgb(140, 190, 214);
-    margin:67px;
-    height: 16px;
-    padding: 41px;
+    margin:10px;
+    height: 15px;
+    padding: 40px;
 }
 .grid{
     display: grid;
     grid-template-areas:
-    "a c"
-    "b c";  
+    "a b c";  
     gap: 10px;
-    margin: 12px;
+    margin: 50px;
     background-color: var(--green)
 
 }
@@ -37,5 +36,48 @@ div{
     grid-area:a;
     background-color: coral;
     color:aquamarine
+
+}
+.second{
+    grid-area: b;
+    background-color: purple;
+    color: burlywood;
+}
+.third{
+    grid-area:c;
+    background-color: #b3a452;
+    color:crimson
+}
+.box{
+    padding: 10px;
+    justify-content:center;
+    align-items: center;
+    margin: 13px;
+    border: none;
+}
+.animated{
+    animation:wobble 1s ease-in-out infinite alternate
+}
+@keyframes wobble{
+    0%{transform:rotate(-360deg);}
+    100%{transoform:rotate(360deg);}
+}
+.animated2{
+    animation: wobble2 0.5s ease-in-out infinite alternate
+}
+@keyframes wobble2 {
+    0%{transform:rotate(360deg);}
+    100%{transform:rotate(86400deg);} /*i like men*/
     
+}
+.flexcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    flex-direction:  row;
+}
+.item{
+    background: var(--black);
+    padding: 1px;
+    color: white;
 }
